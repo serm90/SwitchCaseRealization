@@ -1,0 +1,9 @@
+sum,2,3
+min,6,8
+dub,4,1.25
+cut,9,3
+squ,1.5
+aba,Homer,Sipson
+obn,tor.txt,tor12.txt
+abi,2,6
+

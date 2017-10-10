@@ -15,21 +15,17 @@ public class Main {
             FileReader myFile = null;
             BufferedReader buff = null;
             try {
-                myFile=new FileReader("C://Users//serg-qa//Downloads/com.txt");
+                myFile=new FileReader("com.txt");
                 buff = new BufferedReader(myFile);
-
 
                 while (true) {
                     //считывается строка из файла com.txt
                     String line = buff.readLine();
                     if (line == null) break;
-
                     String[] splitResult = line.split (",");
-
                     for (int i = 0; i < splitResult.length; i++)
 
                     {
-
                         switch (splitResult[i]){
 
                             //операция над цифрами
@@ -94,15 +90,12 @@ public class Main {
                                 System.out.println( "cut = " + "Данные с " + file1.getName() + " добавлены в " +file2.getName() );
                                 break;
 
-                            default:
-                                if (splitResult[i]== null)
-
 //                            case "splitResult[0]":
 
+                            default:
+                                if (splitResult[i]== null)
                                  System.out.println("команда не поддерживается ");
-
                                break;
-
                         }
 
                     }
